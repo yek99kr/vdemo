@@ -47,8 +47,8 @@ if (isTouch) {
 } else {
   function mouseMove(e) {
     e.preventDefault();
-    const clientX = e.clientX;
-    const clientY = e.clientY;
+    const clientX = e.clientX || e.pageX;
+    const clientY = e.clientY || e.pageY;
     var mask = getNode("rect", {
       x: `${clientX - 30 + "px"}`,
       y: `${clientY - 30 + "px"}`,
