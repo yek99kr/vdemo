@@ -41,6 +41,7 @@ if (isTouch) {
       height: 60,
     });
     parent.appendChild(mask);
+    console.log('touchdevice')
   }
   document.addEventListener("touchmove", mouseMove);
 } else {
