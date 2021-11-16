@@ -42,6 +42,7 @@ if (isTouch) {
     });
     parent.appendChild(mask);
   }
+  document.addEventListener("touchmove", mouseMove);
 } else {
   function mouseMove(e) {
     e.preventDefault();
@@ -56,6 +57,8 @@ if (isTouch) {
 
     parent.appendChild(mask);
   }
+  
+document.addEventListener("mousemove", mouseMove);
 }
 
 // function mouseMove(e) {
@@ -78,6 +81,4 @@ if (isTouch) {
 //   parent.appendChild(mask);
 // }
 
-document.addEventListener("mousemove", mouseMove);
-document.addEventListener("touchmove", mouseMove);
 
