@@ -54,18 +54,15 @@ var parent = document.getElementById("myClip");
 
 function mouseMove(e) {
   ev.preventDefault();
-  //   var mask = document.createElementNS(_svgNS, "circle");
-  //   mask.setAttribute("cx", `${(e.pageX - 20 || e.clientX - 20) + "px"}`);
-  //   mask.setAttribute("cy", `${(e.pageY - 20 || e.clientY - 20) + "px"}`);
-  //   mask.setAttribute("fill", "blue");
+   const clientX = e.clientX || e.touches[0].clientX;
+  const clientY = e.clientY || e.touches[0].clientY;
   var mask = getNode("rect", {
-    x: `${(e.pageX - 20 || e.clientX - 20) + "px"}`,
-    y: `${(e.pageY - 20 || e.clientY - 20) + "px"}`,
+    x: `${clientX - 30 + "px"}`,
+    y: `${clientY - 30 + "px"}`,
     width: 60,
     height: 60,
   });
-  //   mask.style.top = (e.pageY - 20 || e.clientY - 20) + "px";
-  //   mask.style.left = (e.pageX - 20 || e.clientX - 20) + "px";
+  });
   parent.appendChild(mask);
 }
 
