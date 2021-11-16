@@ -36,7 +36,7 @@ var _svgNS = "http://www.w3.org/2000/svg";
 var parent = document.getElementById("myClip");
 
 function mouseMove(e) {
-  ev.preventDefault();
+  e.preventDefault();
   //   var mask = document.createElementNS(_svgNS, "circle");
   //   mask.setAttribute("cx", `${(e.pageX - 20 || e.clientX - 20) + "px"}`);
   //   mask.setAttribute("cy", `${(e.pageY - 20 || e.clientY - 20) + "px"}`);
