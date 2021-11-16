@@ -3,13 +3,13 @@
 }
 .top {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
   clip-path: url(#myClip);
   z-index: 2;
 }
 .bottom {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
 }
