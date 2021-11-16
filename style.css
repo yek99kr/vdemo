@@ -1,3 +1,6 @@
+* {
+  overflow: hidden;
+}
 .top {
   position: absolute;
   left: 0;
